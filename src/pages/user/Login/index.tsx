@@ -1,12 +1,5 @@
-import {
-  AlipayCircleOutlined,
-  LockOutlined,
-  MobileOutlined,
-  TaobaoCircleOutlined,
-  UserOutlined,
-  WeiboCircleOutlined,
-} from '@ant-design/icons';
-import { Alert, Space, message, Tabs } from 'antd';
+import { LockOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons';
+import { Alert, message, Tabs } from 'antd';
 import React, { useState } from 'react';
 import ProForm, { ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-form';
 import { useIntl, Link, history, SelectLang, useModel } from 'umi';
@@ -280,12 +273,12 @@ const Login: React.FC = () => {
               </a>
             </div>
           </ProForm>
-          <Space className={styles.other}>
-            其他登录方式 :
-            <AlipayCircleOutlined className={styles.icon} />
-            <TaobaoCircleOutlined className={styles.icon} />
-            <WeiboCircleOutlined className={styles.icon} />
-          </Space>
+          {/* <Space className={styles.other}> */}
+          {/*  其他登录方式 : */}
+          {/*  <AlipayCircleOutlined className={styles.icon} /> */}
+          {/*  <TaobaoCircleOutlined className={styles.icon} /> */}
+          {/*  <WeiboCircleOutlined className={styles.icon} /> */}
+          {/* </Space> */}
         </div>
       </div>
       <Footer />
